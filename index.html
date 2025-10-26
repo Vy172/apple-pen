@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iceland&family=Indie+Flower&family=Shadows+Into+Light+Two&family=Walter+Turncoat&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cover Image -->
+    <div class="title-Page">
+            <nav class="nav-bar">
+        <h1 class="title" id="wifty">WIFTY</h1>
+        <div class="container-2">
+            <p class="iteem"><a href=""><a href="index.html">HOME</a></p>
+            <p class="iteem"><a href="ost.html">OST</a></p>
+        </div>
+    </nav>
+        <!-- image -->
+    </div>
+
+    <!-- Summary Page -->
+    <div class="cover-page">
+        <div class="coverRight">
+            <h1>Summary</h1>
+            <p class="center">In the autumn of 2012, Su Zai Zai transfers to Yucai High School and immediately falls for
+                the aloof Zhang Lu Rang. Despite his impressive academic success and privileged background, Zhang Lu
+                Rang struggles with self-doubt, overshadowed by his genius younger brother. His life is introverted and
+                controlled by constant comparisons.
+                <br>
+                <br>
+                Things change when he meets the cheerful Su Zai Zai, who, along with their friends Gu Ran, Guan Fang,
+                and Jiang Jia, helps him find his true self. As they support each other's goals, Zhang Lu Rang and Su
+                Zai Zai's relationship deepens, with romance blossoming among their group.
+            </p>
+        </div>
+        <div class="coverLeft">
+            <img class="coverImg" src="assets/cover.jpg" alt="WIFTY cover image">
+        </div>
+    </div>
+    <!-- Cast Info  -->
+    <div class="castDiv">
+        <h1 class="heading">CAST</h1>
+        <div class="castM">
+            <button class="zlrBtn open-popup" type="submit" onclick="openRanginfo(); screenDim()"><img class="castImg"
+                    src="assets/zhanglurang.jpg" alt="Zhang Lu Rang"></button>
+            <button class="grBtn" id="btn2" type="submit" onclick="openRaninfo(); screenDim()"><img class="castImg"
+                    src="assets/guran.jpg" alt="Gu Ran"></button>
+            <button class="gfBtn" id="btn3" type="submit" onclick="openFanginfo(); screenDim()"><img class="castImg"
+                    src="assets/guanfeng.jpg" alt="Guan Fang"></button>
+        </div>
+        <div class="castF">
+            <button class="szBtn" id="btn4" type="submit" onclick="openZaiinfo(); screenDim()"><img class="castImg"
+                    src="assets/suzaizai.jpg" alt="Su ZaiZai"></button>
+            <button class="jjBtn" id="btn5" type="submit" onclick="openJiainfo(); screenDim()"><img class="castImg"
+                    src="assets/jiangjia.jpg" alt="Jiang jia"></button>
+        </div>
+
+        <!-- Zhang Lu Rang Info -->
+        <div class="popup-page" id="rangbtn">
+            <div class="coverLeft">
+                <img class="popupImg" src="assets/zhanglurang.jpg" alt="Zhang Lu Rang">
+            </div>
+            <div class="coverRight popup">
+                <button class="closeBtn" onclick="closeinfo()">X</button>
+                <h2>Zhang Lu Rang</h2>
+                <p>Portrayed by: Zhou Yi Ran</p>
+                <p><strong>Birthdate:</strong> November 21, 2000</p>
+                <p><strong>Chinese Zodiac Sign:</strong> Dragon</p>
+                <p><strong>MBTI:</strong> INFP</p>
+            </div>
+        </div>
+        <!-- Gu Ran -->
+        <div class="popup-page" id="ranbtn">
+            <div class="coverLeft">
+                <img class="popupImg" src="assets/guran.jpg" alt="Gu Ran">
+            </div>
+            <div class="coverRight popup">
+                <button class="closeBtn" onclick="closeinfo()">X</button>
+                <h2>Gu Ran</h2>
+                <p>Portrayed by: Bian Tian Yang</p>
+                <p><strong>Birthdate:</strong>February 19, 2003</p>
+                <p><strong>Chinese Zodiac Sign:</strong> Goat</p>
+                <p><strong>MBTI:</strong>N/A</p>
+            </div>
+        </div>
+        <!-- Guan Fang Info -->
+        <div class="popup-page" id="fangbtn">
+            <div class="coverLeft">
+                <img class="popupImg" src="assets/guanfeng.jpg" alt="Guan Fang">
+            </div>
+            <div class="coverRight popup">
+                <button class="closeBtn" onclick="closeinfo()">X</button>
+                <h2>Guan Fang</h2>
+                <p>Portrayed by: Guo Zhe</p>
+                <p><strong>Birthdate:</strong>June 18, 1994</p>
+                <p><strong>Chinese Zodiac Sign:</strong> Dog</p>
+                <p><strong>MBTI:</strong> ENFP</p>
+            </div>
+        </div>
+        <!-- Su Zai Zai info -->
+        <div class="popup-page" id="zaibtn">
+            <div class="coverLeft">
+                <img class="popupImg" src="assets/suzaizai.jpg" alt="SuZaiZai">
+            </div>
+            <div class="coverRight popup">
+                <button class="closeBtn" onclick="closeinfo()">X</button>
+                <h2>Su Zai Zai</h2>
+                <p>Portrayed by: Zhang Miao Yi</p>
+                <p><strong>Birthdate:</strong> September 13, 1998</p>
+                <p><strong>Chinese Zodiac Sign:</strong> Tiger</p>
+                <p><strong>MBTI:</strong> ISTP</p>
+            </div>
+        </div>
+        <!-- Jiang Jia Info -->
+        <div class="popup-page" id="jiabtn">
+            <div class="coverLeft">
+                <img class="popupImg" src="assets/jiangjia.jpg" alt="Jiang Jia">
+            </div>
+            <div class="coverRight popup">
+                <button class="closeBtn" onclick="closeinfo()">X</button>
+                <h2>Jiang Jia</h2>
+                <p>Portrayed by: Jiang Zhi Nan</p>
+                <p><strong>Birthdate:</strong> December 3, 1999</p>
+                <p><strong>Chinese Zodiac Sign:</strong> Rabbit</p>
+                <p><strong>MBTI:</strong> N/A</p>
+            </div>
+        </div>
+    </div>
+        <script src="index.js"></script>
+</body>
+
+</html>
